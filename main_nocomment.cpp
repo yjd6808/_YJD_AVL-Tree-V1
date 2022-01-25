@@ -2,10 +2,10 @@
 #include <assert.h>
 
 #define ON 1
-#define INSERTION_BALANCE ON	// ì‚½ìž… ë°¸ëŸ°ì‹± ì‚¬ìš©í• ì§€
+#define INSERTION_BALANCE ON	// »ðÀÔ ¹ë·±½Ì »ç¿ëÇÒÁö
 
 #if INSERTION_BALANCE == ON
-#define DELETION_BALANCE ON		// ì‚­ì œ ë°¸ëŸ°ì‹± ì‚¬ìš©í• ì§€
+#define DELETION_BALANCE ON		// »èÁ¦ ¹ë·±½Ì »ç¿ëÇÒÁö
 #endif
 
 #define DeleteSafe(x)			\
@@ -362,11 +362,11 @@ int main() {
 	tree.Add(5);
 
 	std::cout << std::boolalpha;
-	std::cout << "1 ì°¾ê¸° : " << tree.Find(1) << "\n";
-	std::cout << "2 ì°¾ê¸° : " << tree.Find(2) << "\n";
-	std::cout << "3 ì°¾ê¸° : " << tree.Find(3) << "\n";
-	std::cout << "4 ì°¾ê¸° : " << tree.Find(4) << "\n";
-	std::cout << "5 ì°¾ê¸° : " << tree.Find(5) << "\n";
+	std::cout << "1 Ã£±â : " << tree.Find(1) << "\n";
+	std::cout << "2 Ã£±â : " << tree.Find(2) << "\n";
+	std::cout << "3 Ã£±â : " << tree.Find(3) << "\n";
+	std::cout << "4 Ã£±â : " << tree.Find(4) << "\n";
+	std::cout << "5 Ã£±â : " << tree.Find(5) << "\n";
 
 	tree.Remove(1);
 	tree.Remove(2);
