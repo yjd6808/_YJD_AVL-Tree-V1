@@ -129,6 +129,7 @@ public:
 		DeleteElementRecursive(pRoot->Left);
 		DeleteElementRecursive(pRoot->Right);
 		DeleteSafe(pRoot);
+		m_iSize = 0;
 	}
 private:
 	Node* Add(Node* root, int data) {
