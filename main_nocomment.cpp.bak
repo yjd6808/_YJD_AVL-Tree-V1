@@ -2,7 +2,11 @@
 #include <assert.h>
 
 #define ON 1
+<<<<<<< HEAD
+#define INSERTION_BALANCE ON	// »ðÀÔ ¹ë·±½Ì »ç¿ëÇÒÁö
+=======
 #define INSERTION_BALANCE ON	// ì‚½ìž… ë°¸ëŸ°ì‹± ì‚¬ìš©í• ì§€
+>>>>>>> 2a4618dd6751cbe52653ab82f1bb90535216e1bc
 
 #if INSERTION_BALANCE == ON
 #define DELETION_BALANCE ON		// ì‚­ì œ ë°¸ëŸ°ì‹± ì‚¬ìš©í• ì§€
