@@ -1,5 +1,7 @@
 #include <iostream>
+#include <assert.h>
 
+#define ON 1
 #define INSERTION_BALANCE ON	// »ðÀÔ ¹ë·±½Ì »ç¿ëÇÒÁö
 
 #if INSERTION_BALANCE == ON
@@ -51,8 +53,10 @@ struct Node
 	void DeleteChild(Node* node) {
 		if (Left == node) {
 			DeleteSafe(Left);
-		} else {
+		} else if (Right == node) {
 			DeleteSafe(Right);
+		} else {
+			assert("¸ù¹Ì?");
 		}
 	}
 };
